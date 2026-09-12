@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071518"><title>괴물 사진사: 미지의 숲</title><link rel="stylesheet" href="./css/style.css"></head>
+<body>
+<header class="site-header"><a href="./index.html" aria-label="시작 화면">◈ <span>MONSTER PHOTOGRAPHER</span></a><span>FIELD JOURNAL <b>·</b> VOL. 01</span></header>
+<main id="shell"><div id="stage">
+<div id="world"><img id="forest" src="./assets/images/backgrounds/moonlit-forest.png" alt=""><img class="fog" src="./assets/images/foregrouds/fog.png" alt=""><div id="monsters"></div><img class="branches" src="./assets/images/foregrouds/branches.png" alt=""></div>
+<div class="vignette"></div><div id="reticle"><span class="reticle-label">FOCUS / 두 눈을 담으세요</span><i id="perfect-zone"></i><b>+</b><small id="focus-status">SEARCHING</small></div><img id="camera" src="./assets/images/camera/camera-hand.png" alt=""><div id="flash"></div>
+<div id="hud" hidden><div class="hud-top"><div><small id="round-label">ROUND 01 / 05</small><strong id="time">60<span>s</span></strong></div><div class="objective"><small>발견한 숲의 비밀</small><strong id="count">0 <em>/ 10</em></strong><div id="progress"></div><span id="failed-count" class="failed-count">실패 사진 0 / 3</span></div><div class="resources"><span><img src="./assets/images/ui/coin.png" alt="코인"><b id="coins">0</b></span><span><img src="./assets/images/ui/film.png" alt="필름"><b id="film">5 / 5</b></span><button data-action="pause" class="icon-button" aria-label="일시정지">Ⅱ</button></div></div><div class="hud-bottom"><div><small>LENS ZOOM</small><strong id="zoom">×1.0</strong><span>우클릭 유지 · 휠로 조절</span></div><div id="reload-ui"><button data-action="reload">R &nbsp; 재장전</button><progress id="reload-progress" max="1" value="0"></progress></div></div></div>
+<section id="screen"></section><div id="toast" role="status" aria-live="polite"></div>
+</div></main>
+<footer><span>마우스 이동 <b>탐색</b> &nbsp; / &nbsp; 왼쪽 클릭 <b>촬영</b> &nbsp; / &nbsp; R <b>재장전</b> &nbsp; / &nbsp; ESC <b>일시정지</b></span><div><button data-action="music" id="music-toggle">음악 ON</button><button data-action="sound" id="sound-toggle">효과음 ON</button><button data-action="flash" id="flash-toggle">섬광 ON</button></div></footer>
+<p class="mobile-note">가로 화면 또는 마우스가 있는 PC에서 플레이해 주세요. 권장 크기 960 × 540 이상.</p>
+<dialog id="modal"><button id="close-modal" aria-label="닫기">×</button><div id="modal-body"></div></dialog>
+<script src="./js/config.js"></script><script src="./js/engine.js"></script><script src="./js/storage.js"></script><script src="./js/audio.js"></script><script src="./js/input.js"></script><script src="./js/main.js"></script>
+</body></html>

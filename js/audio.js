@@ -1,0 +1,2 @@
+'use strict';
+MP.Audio=class{constructor(settings){this.settings=settings;this.effects={};this.bgm=new Audio('./assets/sounds/bgm.mp3');this.bgm.loop=true;this.bgm.volume=.22;}play(name){if(!this.settings.sound)return;let a=this.effects[name];if(!a){a=new Audio('./assets/sounds/'+name+'.mp3');a.volume=.45;this.effects[name]=a;}a.currentTime=0;a.play().catch(()=>{});}music(active){if(active&&this.settings.music)this.bgm.play().catch(()=>{});else this.bgm.pause();}};
